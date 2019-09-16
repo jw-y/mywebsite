@@ -1,10 +1,14 @@
 
-body{
-    padding: 1em 20vh;
+
+@media screen and (min-width:700px){
+    body{
+        padding: 1em 20vh;
+    }
+    .body-container{
+        padding: 1vh 5vh;
+    }
 }
-.body-container{
-    padding: 1vh 5vh;
-}
+
 nav ul {
     list-style-type: none;
     background-color: #333;
