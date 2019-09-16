@@ -33,9 +33,10 @@ nav li a{
     text-align: center;
 }
 
-.dropdown{
-    display:inline;
+div.dropdown{
+    display: inline-block;
     position: absolute;
+    color: white;
 }
 
 .dropdown .dropdown-content{
