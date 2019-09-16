@@ -7,8 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jungwoo's Homepage</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+    </style>
 </head>
 
 <body>
@@ -56,16 +58,16 @@
             <li>Github: https://github.com/jwyang0213</li>
         </ul>
     </div>
-<script>
-    var isDropOpen=false;
-    document.querySelector('.dropdown').onclick = function(){
-        if(isDropOpen)
-            document.querySelector('.dropdown-content').style.display = "none";
-        else
-            document.querySelector('.dropdown-content').style.display = "block";
-        isDropOpen=!isDropOpen;
-    }
-</script>
+    <script>
+        var isDropOpen = false;
+        document.querySelector('.dropdown').onclick = function () {
+            if (isDropOpen)
+                document.querySelector('.dropdown-content').style.display = "none";
+            else
+                document.querySelector('.dropdown-content').style.display = "block";
+            isDropOpen = !isDropOpen;
+        }
+    </script>
 </body>
 
 </html>
