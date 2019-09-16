@@ -19,6 +19,9 @@ body{
     nav ul{
         border-radius: 15px;
     }
+    #profile{
+        float: right;
+    }
 }
 
 nav ul {
@@ -65,10 +68,6 @@ div.dropdown{
 }
 .dropdown:hover .dropdown-content{
     display: block;
-}
-
-#profile{
-    float: right;
 }
 
 #home{
