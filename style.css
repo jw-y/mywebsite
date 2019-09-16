@@ -1,0 +1,26 @@
+
+body{
+    padding: 1em 20vh;
+}
+.body-container{
+    padding: 0 5vh;
+}
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0 1em;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline-block;
+    padding: 1em;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
