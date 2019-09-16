@@ -56,8 +56,12 @@
         </ul>
     </div>
 <script>
+    var isDropOpen=false;
     document.querySelector('.dropdown').onclick = function(){
-        document.querySelector('.dropdown-content').style.display = "block";
+        if(isDropOpen)
+            document.querySelector('.dropdown-content').style.display = "none";
+        else
+            document.querySelector('.dropdown-content').style.display = "block";
     }
 </script>
 </body>
