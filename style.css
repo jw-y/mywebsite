@@ -34,7 +34,7 @@ nav li a{
     position: absolute;
 }
 
-.dropdown-content{
+.dropdown .dropdown-content{
     display: none;
     background-color: #f9f9f9;
     z-index: 1;
