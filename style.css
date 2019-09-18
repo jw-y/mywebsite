@@ -42,7 +42,6 @@ nav ul {
     list-style-type: none;
     background-color: #333;
     margin: 0;
-    padding: 0 8px;
     overflow: hidden;
 }
 
@@ -83,6 +82,30 @@ div.dropdown{
 .dropdown:hover .dropdown-content{
     display: block;
 }
+
+.dropdown-inner .dropdown-content-inner{
+    display: none;
+    background-color: #333;
+    z-index: 1;
+    position: absolute;
+    border-radius: 15px 15px 15px 15px;
+    left: 100%;
+    bottom: 60%;
+}
+.dropdown-content-inner ul{
+    border-radius: 0px 0px 15px 15px;
+}
+.dropdown-content-inner li {
+    display: block;
+}
+.dropdown-inner:hover .dropdown-content-inner{
+    display: block;
+}
+
+.dropdown-content-inner:hover{
+    background-color: #111;
+}
+
 
 #home{
     font-weight: 500;

@@ -21,7 +21,11 @@
                 <li class="dropdown">Projects</li>
                 <div class="dropdown-content">
                     <ul>
-                        <li><a href="#">Algorithms</a></li>
+                        <li class="dropdown-inner">Algorithms
+                            <ul>
+                                <li class="dropdown-content-inner"><a href="https://github.com/jwyang0213/labimplementations">CLSR Implemetations</a></li>
+                            </ul>
+                        </li>
                         <li><a href="">Web</a></li>
                         <li><a href="">Graphics</a></li>
                     </ul>
@@ -57,7 +61,7 @@
         <ul>
             <li>서울시 관악구 관악로 1 서울대학교 301동 414호</li>
             <li>Email: jwyang@theory.snu.ac.kr</li>
-            <li><a href="https://github.com/jwyang0213" target="_blank">Github</a></li>
+            <li><a href="https://github.com/jwyang0213" target="_blank">Go to Github</a></li>
         </ul>
     </div>
     <script>
@@ -68,6 +72,14 @@
             else
                 document.querySelector('.dropdown-content').style.display = "block";
             isDropOpen = !isDropOpen;
+        }
+        var isInnerDropOpen = false;
+        document.querySelector('.dropdown-inner').onclick = function () {
+            if (isInnerDropOpen)
+                document.querySelector('.dropdown-content-inner').style.display = "none";
+            else
+                document.querySelector('.dropdown-content-inner').style.display = "block";
+            isInnerDropOpen = !isInnerDropOpen;
         }
     </script>
 </body>
