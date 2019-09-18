@@ -65,22 +65,22 @@
         </ul>
     </div>
     <script>
-        var isDropOpen = false;
-        document.querySelector('.dropdown').onclick = function () {
-            if (isDropOpen)
-                document.querySelector('.dropdown-content').style.display = "none";
+        var ddci = document.querySelector('.dropdown-inner')
+        ddci.onclick = function () {
+            if (ddci.style.display!=="none")
+                ddci.style.display = "none";
             else
-                document.querySelector('.dropdown-content').style.display = "block";
-            isDropOpen = !isDropOpen;
+                ddci.style.display = "block";
         }
-        var isInnerDropOpen = false;
-        document.querySelector('.dropdown-inner').onclick = function () {
-            if (isInnerDropOpen)
-                document.querySelector('.dropdown-content-inner').style.display = "none";
+        
+        var dd = document.querySelector('.dropdown')
+        dd.onclick = function () {
+            if (dd.sytle.display !== "none")
+                dd.style.display = "none";
             else
-                document.querySelector('.dropdown-content-inner').style.display = "block";
-            isInnerDropOpen = !isInnerDropOpen;
+                dd.style.display = "block";
         }
+        
     </script>
 </body>
 
